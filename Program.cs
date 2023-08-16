@@ -12,6 +12,76 @@ namespace Aula03Colecoes
         {
             ExemplosListasColecoes();
         }
+        
+        // a) Método ObterPorNome
+        public static Funcionario ObterPorNome(List<Funcionario> funcionarios, string nome)
+        {
+            foreach (var funcionario in funcionarios)
+            {
+                if (funcionario.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase))
+                {
+                    return funcionario;
+                }
+            }
+            Console.WriteLine($"Funcionário com nome '{nome}' não encontrado.");
+            return null;
+        }
+
+        // b) Método ObterFuncionariosRecentes
+        public static List<Funcionario> ObterFuncionariosRecentes(List<Funcionario> funcionarios)
+        {
+            funcionarios.RemoveAll(funcionario => funcionario.Id < 4);
+            funcionarios.Sort((f1, f2) => f2.Salario.CompareTo(f1.Salario));
+            return funcionarios;
+        }
+
+        // c) Método ObterEstatisticas
+        public static void ObterEstatisticas(List<Funcionario> funcionarios)
+        {
+            decimal totalSalarios = 0;
+            foreach (var funcionario in funcionarios)
+            {
+                totalSalarios += funcionario.Salario;
+            }
+            Console.WriteLine($"Quantidade de funcionários: {funcionarios.Count}");
+            Console.WriteLine($"Somatório de salários: {totalSalarios:C}");
+        }
+
+        // d) Método ValidarSalarioAdmissao
+        public bool ValidarSalarioAdmissao()
+        {
+            if (Salario == 0 || DataAdmissao < DateTime.Now)
+            {
+                Console.WriteLine("Salário não pode ser zero ou data de admissão não pode ser anterior à data atual.");
+                return false;
+            }
+            return true;
+        }
+
+        // e) Método ValidarNome
+        public bool ValidarNome()
+        {
+            if (Nome.Length < 2)
+            {
+                Console.WriteLine("Nome deve ter pelo menos 2 caracteres.");
+                return false;
+            }
+            return true;
+        }
+
+        // f) Método ObterPorTipo
+        public static List<Funcionario> ObterPorTipo(List<Funcionario> funcionarios, TipoFuncionarioEnum tipo)
+        {
+            List<Funcionario> funcionariosPorTipo = new List<Funcionario>();
+            foreach (var funcionario in funcionarios)
+            {
+                if (funcionario.TipoFuncionario == tipo)
+                {
+                    funcionariosPorTipo.Add(funcionario);
+                }
+            }
+            return funcionariosPorTipo;
+        }
         public static void ExibirLista()
         {
             string dados = "";
