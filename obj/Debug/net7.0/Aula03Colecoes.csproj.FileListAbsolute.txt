@@ -1,0 +1,15 @@
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.csproj.AssemblyReference.cache
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.GeneratedMSBuildEditorConfig.editorconfig
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.AssemblyInfoInputs.cache
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.AssemblyInfo.cs
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.csproj.CoreCompileInputs.cache
+D:\David L\Ds\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.exe
+D:\David L\Ds\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.deps.json
+D:\David L\Ds\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.runtimeconfig.json
+D:\David L\Ds\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.dll
+D:\David L\Ds\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.pdb
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.dll
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\refint\Aula03Colecoes.dll
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.pdb
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.genruntimeconfig.cache
+D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\ref\Aula03Colecoes.dll
