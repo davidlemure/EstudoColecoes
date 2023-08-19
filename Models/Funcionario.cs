@@ -58,20 +58,25 @@ namespace Aula03Colecoes.Models;
             else 
                 return false;
         }
-        // referenciar CPF com string pra evitar erros
-        
 
-
-        
-
-
-
-
-
-
-
-
-
-
-
+    internal bool ValidarSalarioAdmissao()
+    {
+        throw new NotImplementedException();
     }
+    // referenciar CPF com string pra evitar erros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

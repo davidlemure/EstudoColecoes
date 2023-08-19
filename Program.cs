@@ -6,25 +6,35 @@ namespace Aula03Colecoes
 {
     class Program
     {
+        private const int V = 4;
         static List<Funcionario> lista = new List<Funcionario>();
+
+        public int Salario { get; private set; }
+        public DateTime DataAdmissao { get; private set; }
+        public object Nome { get; private set; }
 
         static void Main(string[] args)
         {
             ExemplosListasColecoes();
         }
-        
+
         // a) Método ObterPorNome
-        public static Funcionario ObterPorNome(List<Funcionario> funcionarios, string nome)
+        public static void ObterPorNome(string nome)
         {
-            foreach (var funcionario in funcionarios)
+            List<Funcionario> funcionariosEncontrados = lista.FindAll(x => x.Nome.ToLower().Contains(nome.ToLower()));
+
+            if (funcionariosEncontrados.Count > 0)
             {
-                if (funcionario.Nome.Equals(nome, StringComparison.OrdinalIgnoreCase))
+                Console.WriteLine("Funcionários encontrados com o nome digitado:");
+                foreach (var funcionario in funcionariosEncontrados)
                 {
-                    return funcionario;
+                    Console.WriteLine($"Nome: {funcionario.Nome}\nId: {funcionario.Id}\nCpf: {funcionario.Cpf} \nSalario: {funcionario.Salario} \nData de admissao {funcionario.DataAdmissao} \nTipo de funcionario: {funcionario.TipoFuncionario}");
                 }
             }
-            Console.WriteLine($"Funcionário com nome '{nome}' não encontrado.");
-            return null;
+            else
+            {
+                Console.WriteLine("Nenhum funcionário encontrado com o nome digitado.");
+            }
         }
 
         // b) Método ObterFuncionariosRecentes
@@ -59,7 +69,7 @@ namespace Aula03Colecoes
         }
 
         // e) Método ValidarNome
-        public bool ValidarNome()
+        public bool ValidarNome(string Nome)
         {
             if (Nome.Length < 2)
             {
@@ -68,6 +78,7 @@ namespace Aula03Colecoes
             }
             return true;
         }
+
 
         // f) Método ObterPorTipo
         public static List<Funcionario> ObterPorTipo(List<Funcionario> funcionarios, TipoFuncionarioEnum tipo)
@@ -115,7 +126,7 @@ namespace Aula03Colecoes
 
         public static void ObterPorSalario(decimal valor)
         {
-            lista = lista.FindAll(x => x.Salario >=valor);
+            lista = lista.FindAll(x => x.Salario >= valor);
             ExibirLista();
         }
 
@@ -145,10 +156,10 @@ namespace Aula03Colecoes
         }
 
         public static void BuscarPorNomeAProximado()
-         {
+        {
             lista = lista.FindAll(x => x.Nome.ToLower().Contains("ronaldo"));
             ExibirLista();
-         }
+        }
 
         public static void BuscarPorCpfRemover()
         {
@@ -161,7 +172,7 @@ namespace Aula03Colecoes
 
         public static void RemoverIdMenor4()
         {
-            lista.RemoveAll( x => x.Id < 4);
+            lista.RemoveAll(x => x.Id < 4);
             ExibirLista();
         }
         public static void AdicionarFuncionario()
@@ -183,7 +194,7 @@ namespace Aula03Colecoes
                 return;
             }
 
-            else if(f.Salario == 0)
+            else if (f.Salario == 0)
             {
                 Console.WriteLine("Valor do salário não pode ser 0");
                 return;
@@ -207,11 +218,15 @@ namespace Aula03Colecoes
             do
             {
                 Console.WriteLine("==================================================");
+                Console.WriteLine("--------------------Exercicios--------------------");
                 Console.WriteLine("---Digite o número referente a opção desejada: ---");
-                Console.WriteLine("1 - Obter Por Id");
-                Console.WriteLine("2 - Adicionar funcionário");
-                Console.WriteLine("3 - Obter por Id digitado");
-                Console.WriteLine("4 - Obter por Salário digitado");
+                Console.WriteLine("==================================================");
+                Console.WriteLine("1 - Obter por nome");
+                Console.WriteLine("2 - Obter funcionarios recentes");
+                Console.WriteLine("3 - Obter estatisticas");
+                Console.WriteLine("4 - Validar salario admissao");
+                Console.WriteLine("5 - Validar nome");
+                Console.WriteLine("6 - Obter por tipo");
                 Console.WriteLine("==================================================");
                 Console.WriteLine("-----Ou tecle qualquer outro número para sair-----");
                 Console.WriteLine("==================================================");
@@ -220,28 +235,34 @@ namespace Aula03Colecoes
                 switch (opcaoEscolhida)
                 {
                     case 1:
-                        ObterPorId();
+                        Console.WriteLine("Digite o nome do funcionário que voce deseja buscar");
+                        string nomeBusca = Console.ReadLine(); // Ler o nome digitado pelo usuário
+                        ObterPorNome(nomeBusca);
                         break;
 
                     case 2:
-                        AdicionarFuncionario();
+                        List<Funcionario> funcionariosFiltrados = ObterFuncionariosRecentes(lista); // Passa a lista para o método
+
+                        foreach (var funcionario in funcionariosFiltrados)
+                        {
+                            Console.WriteLine($"Nome: {funcionario.Nome}, Salário: R${funcionario.Salario}");
+                        }
+
                         break;
-                        
+
                     case 3:
-                        Console.WriteLine("Digite o Id do funcionário que vocÊ deseja buscar");
-                        int id = int.Parse(Console.ReadLine());
-                        ObterPorId(id);
+
+                        ObterEstatisticas(lista);
                         break;
                     
                     case 4:
-                        Console.WriteLine("Digite o salário para obter todos acima do valor indicada:");
-                        decimal salario = decimal.Parse(Console.ReadLine());
-                        ObterPorSalario(salario);
-                        break;
 
-                    default:
-                        Console.WriteLine("Saindo do sistema....");
-                        break;
+                    ValidarSalarioAdmissao();
+        {
+
+
+
+
                 }
 
             } while (opcaoEscolhida >= 1 && opcaoEscolhida <= 10);

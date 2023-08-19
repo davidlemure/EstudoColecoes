@@ -13,3 +13,31 @@ D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\refint\Aula03Colecoes.dll
 D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.pdb
 D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.genruntimeconfig.cache
 D:\David L\Ds\Aula03Colecoes\obj\Debug\net7.0\ref\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.AssemblyInfo.cs
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\refint\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.pdb
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.exe
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.deps.json
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.runtimeconfig.json
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\bin\Debug\net7.0\Aula03Colecoes.pdb
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\Aula03Colecoes.genruntimeconfig.cache
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Colecoes\obj\Debug\net7.0\ref\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.AssemblyInfo.cs
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\refint\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.pdb
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\bin\Debug\net7.0\Aula03Colecoes.exe
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\bin\Debug\net7.0\Aula03Colecoes.deps.json
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\bin\Debug\net7.0\Aula03Colecoes.runtimeconfig.json
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\bin\Debug\net7.0\Aula03Colecoes.dll
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\bin\Debug\net7.0\Aula03Colecoes.pdb
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\Aula03Colecoes.genruntimeconfig.cache
+C:\Users\User\Desktop\David\ETEC\2DS\DS\Aula03\Aula03Exercicios\obj\Debug\net7.0\ref\Aula03Colecoes.dll
